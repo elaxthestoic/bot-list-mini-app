@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f4f8;
+    color: #333;
+}
+
+/* Container */
+.app-container {
+    width: 375px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header */
+.app-header {
+    background: linear-gradient(90deg, #4A90E2, #0078FF);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.interact-btn {
+    margin-top: 10px;
+    background: #fff;
+    color: #0078FF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.interact-btn:hover {
+    background: #0078FF;
+    color: #fff;
+}
+
+/* Bot Grid */
+.bot-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background: #f9fbfc;
+}
+
+.bot-icon {
+    background: #0078FF;
+    border-radius: 50%;
+    height: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bot List */
+.bot-list {
+    padding: 10px;
+}
+
+.bot-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bot-avatar {
+    background: #ddd;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.bot-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.bot-info p {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.chat-btn {
+    margin-left: auto;
+    background: #0078FF;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.chat-btn:hover {
+    background: #005bb5;
+}
+
+/* Footer Navigation */
+.app-footer {
+    display: flex;
+    justify-content: space-around;
+    background: #f4f4f4;
+    padding: 10px 0;
+}
+
+.nav-item {
+    color: #777;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.nav-item.active {
+    color: #0078FF;
+}
+
+.nav-item:hover {
+    color: #4A90E2;
+}
