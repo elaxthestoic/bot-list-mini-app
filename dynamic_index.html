@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <title>Bot Mini App</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Container -->
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <h1>Bot Mini App</h1>
+            <button class="interact-btn">Interact with</button>
+        </header>
+
+        <!-- List Section -->
+        <section class="bot-list" id="bot-list">
+            <!-- Dynamically generated bot cards will appear here -->
+        </section>
+
+        <!-- Footer Navigation -->
+        <footer class="app-footer">
+            <div class="nav-item active">Home</div>
+            <div class="nav-item">Bots</div>
+            <div class="nav-item">Settings</div>
+        </footer>
+    </div>
+
+    <!-- JavaScript to dynamically generate the bot list -->
+    <script>
+        // Example JSON file location
+        const jsonFile = 'mini_apps.json';
+
+        // Fetch bots from the JSON file and populate the bot list
+        fetch(jsonFile)
+            .then(response => response.json())
+            .then(bots => {
+                const botListContainer = document.getElementById('bot-list');
+
+                bots.forEach(bot => {
+                    // Create a card for each bot
+                    const botCard = document.createElement('div');
+                    botCard.className = 'bot-card';
+
+                    // Bot avatar
+                    const botAvatar = document.createElement('div');
+                    botAvatar.className = 'bot-avatar';
+                    botCard.appendChild(botAvatar);
+
+                    // Bot information
+                    const botInfo = document.createElement('div');
+                    botInfo.className = 'bot-info';
+                    botInfo.innerHTML = `
+                        <h3>${bot.name}</h3>
+                        <p>@${bot.username} • ID: ${bot.id}</p>
+                    `;
+                    botCard.appendChild(botInfo);
+
+                    // Chat button
+                    const chatButton = document.createElement('button');
+                    chatButton.className = 'chat-btn';
+                    chatButton.textContent = 'Start';
+                    chatButton.onclick = () => {
+                        // Open the bot in Telegram
+                        window.Telegram.WebApp.openTelegramLink(`https://t.me/${bot.username}`);
+                    };
+                    botCard.appendChild(chatButton);
+
+                    // Add the card to the container
+                    botListContainer.appendChild(botCard);
+                });
+            })
+            .catch(error => console.error('Error loading bot list:', error));
+    </script>
+</body>
+</html>
