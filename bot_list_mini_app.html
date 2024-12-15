@@ -1,69 +1,1478 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bot List</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      padding: 20px;
-    }
-    .bot {
-      background-color: #fff;
-      border-radius: 5px;
-      margin-bottom: 10px;
-      padding: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    .bot h3 {
-      margin: 0;
-      font-size: 1.2em;
-      color: #333;
-    }
-    .bot p {
-      margin: 5px 0;
-      color: #555;
-    }
-    .btn {
-      padding: 10px 15px;
-      background-color: #00aaff;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-    .btn:hover {
-      background-color: #0077cc;
-    }
-  </style>
-</head>
-<body>
-  <h1>Your Tracked Bots</h1>
-  <div id="bot-list">
-    <!-- Bots will be listed here dynamically -->
-  </div>
-  <script>
-    // Example bot data (you'll get this data from the Telegram bot dynamically)
-    const bots = [
-      { name: 'Bot 1', username: '@bot1', id: 12345 },
-      { name: 'Bot 2', username: '@bot2', id: 67890 },
-      { name: 'Bot 3', username: '@bot3', id: 11223 }
-    ];
 
-    // Dynamically create the bot list UI
-    const botListElement = document.getElementById('bot-list');
-    bots.forEach(bot => {
-      const botElement = document.createElement('div');
-      botElement.className = 'bot';
-      botElement.innerHTML = `
-        <h3>${bot.name}</h3>
-        <p>Username: <code>${bot.username}</code></p>
-        <p>ID: ${bot.id}</p>
-        <button class="btn">Interact with ${bot.name}</button>
-      `;
-      botListElement.appendChild(botElement);
-    });
-  </script>
-</body>
-</html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Telegram Bots List</title>
+        <style>
+            body { font-family: Arial, sans-serif; }
+            h1 { text-align: center; color: #4CAF50; }
+            .bot-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+            .bot-card { border: 1px solid #ddd; border-radius: 10px; padding: 20px; width: 200px; text-align: center; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+            .bot-card h2 { color: #333; font-size: 18px; margin: 10px 0; }
+            .bot-card p { color: #777; font-size: 14px; }
+            .bot-card a { color: #007BFF; text-decoration: none; }
+            .bot-card a:hover { text-decoration: underline; }
+        </style>
+    </head>
+    <body>
+        <h1>Your Tracked Telegram Bots</h1>
+        <div class="bot-container">
+    
+        <div class="bot-card">
+            <h2>Binance Moonbix bot</h2>
+            <p>Username: <a href="https://t.me/Binance_Moonbix_bot">@Binance_Moonbix_bot</a></p>
+            <p>ID: 7279327591</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Major</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7487372978</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>PixelTap by Pixelverse</h2>
+            <p>Username: <a href="https://t.me/pixelversexyzbot">@pixelversexyzbot</a></p>
+            <p>ID: 6759489228</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>DeezLoad</h2>
+            <p>Username: <a href="https://t.me/deezload2bot">@deezload2bot</a></p>
+            <p>ID: 1437229810</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>ElaxAirdropBot</h2>
+            <p>Username: <a href="https://t.me/elaxairdrop_bot">@elaxairdrop_bot</a></p>
+            <p>ID: 8174536282</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>BotFather</h2>
+            <p>Username: <a href="https://t.me/BotFather">@BotFather</a></p>
+            <p>ID: 93372553</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Junction Bot</h2>
+            <p>Username: <a href="https://t.me/junction_bot">@junction_bot</a></p>
+            <p>ID: 374139448</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Tomarket App</h2>
+            <p>Username: <a href="https://t.me/Tomarket_ai_bot">@Tomarket_ai_bot</a></p>
+            <p>ID: 7398098542</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Bitget Wallet Lite</h2>
+            <p>Username: <a href="https://t.me/BitgetWallet_TGBot">@BitgetWallet_TGBot</a></p>
+            <p>ID: 7286911587</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>BeViral</h2>
+            <p>Username: <a href="https://t.me/Be_Viral_bot">@Be_Viral_bot</a></p>
+            <p>ID: 6372227272</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>CashRush</h2>
+            <p>Username: <a href="https://t.me/cash_rush_bot">@cash_rush_bot</a></p>
+            <p>ID: 7342134128</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Get Rich</h2>
+            <p>Username: <a href="https://t.me/gtrch_game_bot">@gtrch_game_bot</a></p>
+            <p>ID: 7453390925</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>HOT Wallet</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 6739011720</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>DuckChain</h2>
+            <p>Username: <a href="https://t.me/DuckChain_bot">@DuckChain_bot</a></p>
+            <p>ID: 7191881685</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>DiceSwap</h2>
+            <p>Username: <a href="https://t.me/DiceSwap_Bot">@DiceSwap_Bot</a></p>
+            <p>ID: 6994413081</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>MeowFarm</h2>
+            <p>Username: <a href="https://t.me/meowfarming_bot">@meowfarming_bot</a></p>
+            <p>ID: 7757214687</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Vanilla Finance</h2>
+            <p>Username: <a href="https://t.me/Vanilla_Finance_Bot">@Vanilla_Finance_Bot</a></p>
+            <p>ID: 7318875507</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>AKEDO Games</h2>
+            <p>Username: <a href="https://t.me/Akedo_Bot">@Akedo_Bot</a></p>
+            <p>ID: 7340377715</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TelegramAI | ChatGPT-4o</h2>
+            <p>Username: <a href="https://t.me/spacecoinGPT_bot">@spacecoinGPT_bot</a></p>
+            <p>ID: 6047577965</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Duck Master</h2>
+            <p>Username: <a href="https://t.me/duckmaster_game_bot">@duckmaster_game_bot</a></p>
+            <p>ID: 7094222225</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>HEXN.IO App</h2>
+            <p>Username: <a href="https://t.me/hexn_bot">@hexn_bot</a></p>
+            <p>ID: 7134025001</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>JetTon 💎 Games</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 5822742440</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Dogex</h2>
+            <p>Username: <a href="https://t.me/DogexGames_bot">@DogexGames_bot</a></p>
+            <p>ID: 7327190602</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TIGA Spins</h2>
+            <p>Username: <a href="https://t.me/TIGA_SPIN_BOT">@TIGA_SPIN_BOT</a></p>
+            <p>ID: 7677311198</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Nordom Gates</h2>
+            <p>Username: <a href="https://t.me/Nordom_Gates_Bot">@Nordom_Gates_Bot</a></p>
+            <p>ID: 7296608617</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Exoworld</h2>
+            <p>Username: <a href="https://t.me/PlayExoworldBot">@PlayExoworldBot</a></p>
+            <p>ID: 7293741753</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Muhomor Tap</h2>
+            <p>Username: <a href="https://t.me/muhomor_tap_bot">@muhomor_tap_bot</a></p>
+            <p>ID: 7810907936</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TERMINAL</h2>
+            <p>Username: <a href="https://t.me/terminalgame_bot">@terminalgame_bot</a></p>
+            <p>ID: 7014464658</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Dropee</h2>
+            <p>Username: <a href="https://t.me/DropeeBot">@DropeeBot</a></p>
+            <p>ID: 7398702642</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>ZenCoin</h2>
+            <p>Username: <a href="https://t.me/theZencoin_bot">@theZencoin_bot</a></p>
+            <p>ID: 7233618515</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>RiverLandGame</h2>
+            <p>Username: <a href="https://t.me/RiverLandGameBot">@RiverLandGameBot</a></p>
+            <p>ID: 7513629252</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Bitget-Buy Crypto&Bitcoin</h2>
+            <p>Username: <a href="https://t.me/BitgetOfficialBot">@BitgetOfficialBot</a></p>
+            <p>ID: 6463367606</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Daily Channels</h2>
+            <p>Username: <a href="https://t.me/dailychannelsbot">@dailychannelsbot</a></p>
+            <p>ID: 889814768</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>EggDrop</h2>
+            <p>Username: <a href="https://t.me/EggDrop_GombleBot">@EggDrop_GombleBot</a></p>
+            <p>ID: 7405454464</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Searchee Bot</h2>
+            <p>Username: <a href="https://t.me/SearcheeBot">@SearcheeBot</a></p>
+            <p>ID: 464131652</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Gods Of The TON</h2>
+            <p>Username: <a href="https://t.me/gods_of_the_ton_bot">@gods_of_the_ton_bot</a></p>
+            <p>ID: 6713746907</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>DejenDog | Cooking ⏲️</h2>
+            <p>Username: <a href="https://t.me/DejenDogBot">@DejenDogBot</a></p>
+            <p>ID: 7141855095</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>DLCcoin Bot</h2>
+            <p>Username: <a href="https://t.me/DLCcoin_Bot">@DLCcoin_Bot</a></p>
+            <p>ID: 7496269011</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Telegram Apps Center</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 6669225483</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Nomis App</h2>
+            <p>Username: <a href="https://t.me/NomisAppBot">@NomisAppBot</a></p>
+            <p>ID: 7237887003</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>SHARKS</h2>
+            <p>Username: <a href="https://t.me/realsharkbot">@realsharkbot</a></p>
+            <p>ID: 7027199370</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Bullish Farm Game</h2>
+            <p>Username: <a href="https://t.me/BullishFarmBot">@BullishFarmBot</a></p>
+            <p>ID: 7373499155</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>HoldCoin</h2>
+            <p>Username: <a href="https://t.me/theHoldCoinBot">@theHoldCoinBot</a></p>
+            <p>ID: 6916090385</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Memes Lab Bot</h2>
+            <p>Username: <a href="https://t.me/MemesLabBot">@MemesLabBot</a></p>
+            <p>ID: 7314265682</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Golden Guardians 🕹</h2>
+            <p>Username: <a href="https://t.me/ggs_official_bot">@ggs_official_bot</a></p>
+            <p>ID: 7724536001</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>UXUY Wallet</h2>
+            <p>Username: <a href="https://t.me/UXUYbot">@UXUYbot</a></p>
+            <p>ID: 5974673216</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>#fomo_hash</h2>
+            <p>Username: <a href="https://t.me/fomohash_bot">@fomohash_bot</a></p>
+            <p>ID: 7814710027</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>YouTube Music | Tik Tok Music | Music Downloader | Songs</h2>
+            <p>Username: <a href="https://t.me/JustYoutubeMusicBot">@JustYoutubeMusicBot</a></p>
+            <p>ID: 1639666559</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>CryptoRank</h2>
+            <p>Username: <a href="https://t.me/CryptoRank_app_bot">@CryptoRank_app_bot</a></p>
+            <p>ID: 7431150044</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>BeUnstoppable</h2>
+            <p>Username: <a href="https://t.me/BeUnstoppable_bot">@BeUnstoppable_bot</a></p>
+            <p>ID: 7292762887</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Ton.AI</h2>
+            <p>Username: <a href="https://t.me/PeaAIBot">@PeaAIBot</a></p>
+            <p>ID: 7090017473</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Node Wars</h2>
+            <p>Username: <a href="https://t.me/nodewars_bot">@nodewars_bot</a></p>
+            <p>ID: 7236560639</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>DUCK</h2>
+            <p>Username: <a href="https://t.me/DuckCommunityBot">@DuckCommunityBot</a></p>
+            <p>ID: 7040188082</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Stars</h2>
+            <p>Username: <a href="https://t.me/Stars_MeBot">@Stars_MeBot</a></p>
+            <p>ID: 7737775098</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>4EVERLAND Bot</h2>
+            <p>Username: <a href="https://t.me/tg_4everland_bot">@tg_4everland_bot</a></p>
+            <p>ID: 5678839864</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>ABLY</h2>
+            <p>Username: <a href="https://t.me/AblyBot">@AblyBot</a></p>
+            <p>ID: 1615293784</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Iceberg</h2>
+            <p>Username: <a href="https://t.me/IcebergAppBot">@IcebergAppBot</a></p>
+            <p>ID: 6998726337</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Goblin Mine Game</h2>
+            <p>Username: <a href="https://t.me/GoblinMine_bot">@GoblinMine_bot</a></p>
+            <p>ID: 7229789474</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Cats&Dogs</h2>
+            <p>Username: <a href="https://t.me/catsdogs_game_bot">@catsdogs_game_bot</a></p>
+            <p>ID: 7497436624</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Meworld</h2>
+            <p>Username: <a href="https://t.me/meworld_game_bot">@meworld_game_bot</a></p>
+            <p>ID: 7476971878</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TapCoinsBot</h2>
+            <p>Username: <a href="https://t.me/TapCoinsBot">@TapCoinsBot</a></p>
+            <p>ID: 6632923948</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Stickers</h2>
+            <p>Username: <a href="https://t.me/Stickers">@Stickers</a></p>
+            <p>ID: 429000</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Electra App</h2>
+            <p>Username: <a href="https://t.me/ElectraAppBot">@ElectraAppBot</a></p>
+            <p>ID: 6507470937</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>HUMAN</h2>
+            <p>Username: <a href="https://t.me/imhmnbot">@imhmnbot</a></p>
+            <p>ID: 7384309275</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>CEX.IO Power Tap</h2>
+            <p>Username: <a href="https://t.me/cexio_tap_bot">@cexio_tap_bot</a></p>
+            <p>ID: 7037794345</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Gate.io Wallet</h2>
+            <p>Username: <a href="https://t.me/gateio_Wallet_bot">@gateio_Wallet_bot</a></p>
+            <p>ID: 7866576556</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Starsfi</h2>
+            <p>Username: <a href="https://t.me/starsfibot">@starsfibot</a></p>
+            <p>ID: 7226149943</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Not Pixel</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7249432100</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Vertus</h2>
+            <p>Username: <a href="https://t.me/Vertus_App_bot">@Vertus_App_bot</a></p>
+            <p>ID: 7063478347</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Wigwam Drum Game</h2>
+            <p>Username: <a href="https://t.me/drumtap_bot">@drumtap_bot</a></p>
+            <p>ID: 7453769018</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Timon</h2>
+            <p>Username: <a href="https://t.me/TimonFunBot">@TimonFunBot</a></p>
+            <p>ID: 7626419553</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>1win Token</h2>
+            <p>Username: <a href="https://t.me/token1win_bot">@token1win_bot</a></p>
+            <p>ID: 7305133454</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>BIT App</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7529485705</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TON Autopay - Airdrop 💎</h2>
+            <p>Username: <a href="https://t.me/ton_ref_airdrop_bot">@ton_ref_airdrop_bot</a></p>
+            <p>ID: 7451800797</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TabiZoo</h2>
+            <p>Username: <a href="https://t.me/tabizoobot">@tabizoobot</a></p>
+            <p>ID: 6790812749</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Bcoin 2048</h2>
+            <p>Username: <a href="https://t.me/Bcoin2048bot">@Bcoin2048bot</a></p>
+            <p>ID: 7054312435</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Spell Wallet</h2>
+            <p>Username: <a href="https://t.me/spell_wallet_bot">@spell_wallet_bot</a></p>
+            <p>ID: 6784664471</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>CITY Holder Game 🏠</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 6307196365</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Dogecoin Automatic 🤖</h2>
+            <p>Username: <a href="https://t.me/dogecoin_automatic_bot">@dogecoin_automatic_bot</a></p>
+            <p>ID: 7297087390</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Smartest</h2>
+            <p>Username: <a href="https://t.me/play_smartest_bot">@play_smartest_bot</a></p>
+            <p>ID: 7237422285</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Gemz</h2>
+            <p>Username: <a href="https://t.me/gemzcoin_bot">@gemzcoin_bot</a></p>
+            <p>ID: 7031693843</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Lost Dogs: The Way</h2>
+            <p>Username: <a href="https://t.me/lost_dogs_bot">@lost_dogs_bot</a></p>
+            <p>ID: 7308604356</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Toncapy</h2>
+            <p>Username: <a href="https://t.me/toncapy_bot">@toncapy_bot</a></p>
+            <p>ID: 7098838990</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Piggy Bank 🏀</h2>
+            <p>Username: <a href="https://t.me/piggybankgamebot">@piggybankgamebot</a></p>
+            <p>ID: 7070093783</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Catia Eduverse</h2>
+            <p>Username: <a href="https://t.me/catia_gamebot">@catia_gamebot</a></p>
+            <p>ID: 7145031500</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>PAWS</h2>
+            <p>Username: <a href="https://t.me/PAWSOG_bot">@PAWSOG_bot</a></p>
+            <p>ID: 7200992513</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>SantaSOL GAME</h2>
+            <p>Username: <a href="https://t.me/SantaSOL_bot">@SantaSOL_bot</a></p>
+            <p>ID: 7860008267</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>BULLS 𓃓</h2>
+            <p>Username: <a href="https://t.me/BullsFarmBot">@BullsFarmBot</a></p>
+            <p>ID: 7226096759</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Hrum 🥠</h2>
+            <p>Username: <a href="https://t.me/hrummebot">@hrummebot</a></p>
+            <p>ID: 7041524291</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Wallet</h2>
+            <p>Username: <a href="https://t.me/wallet">@wallet</a></p>
+            <p>ID: 1985737506</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Circle</h2>
+            <p>Username: <a href="https://t.me/sparkscirclebot">@sparkscirclebot</a></p>
+            <p>ID: 7645552521</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Rich Teddy TapApp</h2>
+            <p>Username: <a href="https://t.me/richteddy_bot">@richteddy_bot</a></p>
+            <p>ID: 7323842267</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>W-Coin</h2>
+            <p>Username: <a href="https://t.me/wcoin_tapbot">@wcoin_tapbot</a></p>
+            <p>ID: 7125247569</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>PiggyPiggy</h2>
+            <p>Username: <a href="https://t.me/PiggyPiggyofficialbot">@PiggyPiggyofficialbot</a></p>
+            <p>ID: 7232799301</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>JetTon Farming Bot</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7068983492</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TronKeeper</h2>
+            <p>Username: <a href="https://t.me/TronKeeperBot">@TronKeeperBot</a></p>
+            <p>ID: 7747326372</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>DoctorX Bot</h2>
+            <p>Username: <a href="https://t.me/doctorx_meme_bot">@doctorx_meme_bot</a></p>
+            <p>ID: 7922517401</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>PinEye Bot</h2>
+            <p>Username: <a href="https://t.me/PinEye_Bot">@PinEye_Bot</a></p>
+            <p>ID: 7456610966</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>AVACOIN</h2>
+            <p>Username: <a href="https://t.me/avagoldcoin_bot">@avagoldcoin_bot</a></p>
+            <p>ID: 6765859476</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>pigshousebot</h2>
+            <p>Username: <a href="https://t.me/PigshouseBot">@PigshouseBot</a></p>
+            <p>ID: 7493372716</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TapSwap</h2>
+            <p>Username: <a href="https://t.me/tapswap_bot">@tapswap_bot</a></p>
+            <p>ID: 6676712195</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Gate.io Official Bot</h2>
+            <p>Username: <a href="https://t.me/gate_official_bot">@gate_official_bot</a></p>
+            <p>ID: 5247844575</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TON Station APP</h2>
+            <p>Username: <a href="https://t.me/tonstationgames_bot">@tonstationgames_bot</a></p>
+            <p>ID: 7049553830</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Dogiators</h2>
+            <p>Username: <a href="https://t.me/Dogiators_bot">@Dogiators_bot</a></p>
+            <p>ID: 6735350743</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>JIN Army | Airdrop 🎊</h2>
+            <p>Username: <a href="https://t.me/JINArmyBot">@JINArmyBot</a></p>
+            <p>ID: 6898034177</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Pepe Meme 🐸</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7114778391</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Bybit SpaceS</h2>
+            <p>Username: <a href="https://t.me/bybit_spaces_bot">@bybit_spaces_bot</a></p>
+            <p>ID: 7718028066</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>MemeFi Coin</h2>
+            <p>Username: <a href="https://t.me/memefi_coin_bot">@memefi_coin_bot</a></p>
+            <p>ID: 6619665157</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>XYRO PORTAL</h2>
+            <p>Username: <a href="https://t.me/XyroPortalBot">@XyroPortalBot</a></p>
+            <p>ID: 7255280221</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Time Farm</h2>
+            <p>Username: <a href="https://t.me/TimeFarmCryptoBot">@TimeFarmCryptoBot</a></p>
+            <p>ID: 7297255616</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Mining Combo</h2>
+            <p>Username: <a href="https://t.me/miningcombo_Bot">@miningcombo_Bot</a></p>
+            <p>ID: 7012443597</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Bums</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7163842472</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Agent 301</h2>
+            <p>Username: <a href="https://t.me/Agent301Bot">@Agent301Bot</a></p>
+            <p>ID: 7432775513</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>STON.fi DEX</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 6546840267</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TONxDAO</h2>
+            <p>Username: <a href="https://t.me/tonxdao_bot">@tonxdao_bot</a></p>
+            <p>ID: 7370782285</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>OKX Wallet</h2>
+            <p>Username: <a href="https://t.me/OKX_WALLET_BOT">@OKX_WALLET_BOT</a></p>
+            <p>ID: 7684544784</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Gameness</h2>
+            <p>Username: <a href="https://t.me/GamenessBot">@GamenessBot</a></p>
+            <p>ID: 7129927706</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Boinkers 💩💎</h2>
+            <p>Username: <a href="https://t.me/boinker_bot">@boinker_bot</a></p>
+            <p>ID: 7369661187</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Not Bored Puppies Bot</h2>
+            <p>Username: <a href="https://t.me/NotBoredPuppies_bot">@NotBoredPuppies_bot</a></p>
+            <p>ID: 6479177278</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Gatto | Game</h2>
+            <p>Username: <a href="https://t.me/gatto_gamebot">@gatto_gamebot</a></p>
+            <p>ID: 6046528373</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>BrainGames</h2>
+            <p>Username: <a href="https://t.me/BrainGamesAppBot">@BrainGamesAppBot</a></p>
+            <p>ID: 7413585669</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Elephants 🐘</h2>
+            <p>Username: <a href="https://t.me/elephantshouse_bot">@elephantshouse_bot</a></p>
+            <p>ID: 7403794903</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Crypto Bot</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 1559501630</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Dormint</h2>
+            <p>Username: <a href="https://t.me/dormint_bot">@dormint_bot</a></p>
+            <p>ID: 6278907403</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>ONUS Exchange Bot</h2>
+            <p>Username: <a href="https://t.me/onus_tap_tap_tap_bot">@onus_tap_tap_tap_bot</a></p>
+            <p>ID: 7487560004</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>userinfobot</h2>
+            <p>Username: <a href="https://t.me/userinfobot">@userinfobot</a></p>
+            <p>ID: 52504489</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>PocketFi</h2>
+            <p>Username: <a href="https://t.me/pocketfi_bot">@pocketfi_bot</a></p>
+            <p>ID: 6546647202</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TONDROP | APP</h2>
+            <p>Username: <a href="https://t.me/TondropEarnBot">@TondropEarnBot</a></p>
+            <p>ID: 7506002320</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Miner Mania</h2>
+            <p>Username: <a href="https://t.me/Miner_Mania_bot">@Miner_Mania_bot</a></p>
+            <p>ID: 7285099349</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Premium Bot</h2>
+            <p>Username: <a href="https://t.me/PremiumBot">@PremiumBot</a></p>
+            <p>ID: 5314653481</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Blink Game AI</h2>
+            <p>Username: <a href="https://t.me/blinkgameai_bot">@blinkgameai_bot</a></p>
+            <p>ID: 8113535339</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TONFAN APP</h2>
+            <p>Username: <a href="https://t.me/TonFanMining_bot">@TonFanMining_bot</a></p>
+            <p>ID: 7390013911</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Clayton Game</h2>
+            <p>Username: <a href="https://t.me/claytoncoinbot">@claytoncoinbot</a></p>
+            <p>ID: 6505754016</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>YouTube Downloader Bot</h2>
+            <p>Username: <a href="https://t.me/TheYoutubeXBot">@TheYoutubeXBot</a></p>
+            <p>ID: 6316972265</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Spotybot</h2>
+            <p>Username: <a href="https://t.me/Spotybot">@Spotybot</a></p>
+            <p>ID: 114220290</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>YTDownloader🔊📍</h2>
+            <p>Username: <a href="https://t.me/yout_downloader_bot">@yout_downloader_bot</a></p>
+            <p>ID: 1628100511</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Rent Tycoon Game</h2>
+            <p>Username: <a href="https://t.me/Rent_Tower_Game_bot">@Rent_Tower_Game_bot</a></p>
+            <p>ID: 7247202717</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>SEI BEAR APP</h2>
+            <p>Username: <a href="https://t.me/TON_Minerapp_bot">@TON_Minerapp_bot</a></p>
+            <p>ID: 8008972854</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>JumpCoin</h2>
+            <p>Username: <a href="https://t.me/JumpCoin_Games_Bot">@JumpCoin_Games_Bot</a></p>
+            <p>ID: 7222563344</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Hamster Kombat Key Generator Merge | Cube | Clone | Train | BIKE</h2>
+            <p>Username: <a href="https://t.me/Hamster_Kombat_Keys_Gen_Bot">@Hamster_Kombat_Keys_Gen_Bot</a></p>
+            <p>ID: 7460996017</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>SUNWAVES Bot</h2>
+            <p>Username: <a href="https://t.me/sunwaves_token_bot">@sunwaves_token_bot</a></p>
+            <p>ID: 7316190821</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TON Society ID</h2>
+            <p>Username: <a href="https://t.me/ton_society_bot">@ton_society_bot</a></p>
+            <p>ID: 6685490986</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>SpinnerCoin</h2>
+            <p>Username: <a href="https://t.me/SpinnerCoin_bot">@SpinnerCoin_bot</a></p>
+            <p>ID: 6989116969</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Drops💧</h2>
+            <p>Username: <a href="https://t.me/drops_coin_bot">@drops_coin_bot</a></p>
+            <p>ID: 8157069703</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>$RACE to Billion</h2>
+            <p>Username: <a href="https://t.me/Racememe_bot">@Racememe_bot</a></p>
+            <p>ID: 6879744962</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Feed</h2>
+            <p>Username: <a href="https://t.me/feed_x_bot">@feed_x_bot</a></p>
+            <p>ID: 7827246326</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Rating</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7659288224</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>CallFluent Bot</h2>
+            <p>Username: <a href="https://t.me/callfluent_bot">@callfluent_bot</a></p>
+            <p>ID: 7148711449</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Heart ❤️</h2>
+            <p>Username: <a href="https://t.me/heart_game_bot">@heart_game_bot</a></p>
+            <p>ID: 7407202535</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>FadeWallet</h2>
+            <p>Username: <a href="https://t.me/fadewalletbot">@fadewalletbot</a></p>
+            <p>ID: 7280032107</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>iMonster Ai Bot</h2>
+            <p>Username: <a href="https://t.me/iMonsterai_bot">@iMonsterai_bot</a></p>
+            <p>ID: 7503547441</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Staff Only</h2>
+            <p>Username: <a href="https://t.me/staffonlygame_bot">@staffonlygame_bot</a></p>
+            <p>ID: 6827075968</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Bits</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7506927541</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Papo Ninja</h2>
+            <p>Username: <a href="https://t.me/papo_official_bot">@papo_official_bot</a></p>
+            <p>ID: 6535820465</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>HOT Notifications 🔔</h2>
+            <p>Username: <a href="https://t.me/hot_alarms_4bot">@hot_alarms_4bot</a></p>
+            <p>ID: 6873304469</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>🚀 Activity</h2>
+            <p>Username: <a href="https://t.me/ActivtyLauncher_bot">@ActivtyLauncher_bot</a></p>
+            <p>ID: 6283320584</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>CEDEX Tap</h2>
+            <p>Username: <a href="https://t.me/cedex_tap_bot">@cedex_tap_bot</a></p>
+            <p>ID: 6408941551</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>MOMO.FUN</h2>
+            <p>Username: <a href="https://t.me/NovaTreeBot">@NovaTreeBot</a></p>
+            <p>ID: 6038465650</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>miniapps.wiki</h2>
+            <p>Username: <a href="https://t.me/miniapps_wiki_bot">@miniapps_wiki_bot</a></p>
+            <p>ID: 6458936290</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Dotcoin</h2>
+            <p>Username: <a href="https://t.me/dotcoin_bot">@dotcoin_bot</a></p>
+            <p>ID: 6549042457</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>BioMatrix_Airdrop</h2>
+            <p>Username: <a href="https://t.me/test_biomatrix_airdrop_bot">@test_biomatrix_airdrop_bot</a></p>
+            <p>ID: 7369946476</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>OKX Racer</h2>
+            <p>Username: <a href="https://t.me/OKX_official_bot">@OKX_official_bot</a></p>
+            <p>ID: 5686124987</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Battle Bulls</h2>
+            <p>Username: <a href="https://t.me/battle_games_com_bot">@battle_games_com_bot</a></p>
+            <p>ID: 6926764930</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Fragment Auction Alerts</h2>
+            <p>Username: <a href="https://t.me/fragment">@fragment</a></p>
+            <p>ID: 5444323279</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Crypto Valley Exchange App</h2>
+            <p>Username: <a href="https://t.me/cryptovalleyexchange_bot">@cryptovalleyexchange_bot</a></p>
+            <p>ID: 8084874089</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>MoonDrops</h2>
+            <p>Username: <a href="https://t.me/moondropsggbot">@moondropsggbot</a></p>
+            <p>ID: 7317271690</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Fintopio</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 5005029280</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>AKEFish</h2>
+            <p>Username: <a href="https://t.me/AKEFishBot">@AKEFishBot</a></p>
+            <p>ID: 7222149302</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Kolo</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7115675017</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>FOMO</h2>
+            <p>Username: <a href="https://t.me/Fomofund_bot">@Fomofund_bot</a></p>
+            <p>ID: 7261507078</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>RoOLZ</h2>
+            <p>Username: <a href="https://t.me/ROoLZQuest_bot">@ROoLZQuest_bot</a></p>
+            <p>ID: 7127850510</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TON Coin Giveaway</h2>
+            <p>Username: <a href="https://t.me/firstGiveaway_Bot">@firstGiveaway_Bot</a></p>
+            <p>ID: 7904478767</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>GRAND 💎 COMBAT</h2>
+            <p>Username: <a href="https://t.me/grandcombat_bot">@grandcombat_bot</a></p>
+            <p>ID: 7483565509</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>PawsCombat</h2>
+            <p>Username: <a href="https://t.me/PawsCombat_bot">@PawsCombat_bot</a></p>
+            <p>ID: 7265037136</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TADA mini</h2>
+            <p>Username: <a href="https://t.me/TADA_Ride_Bot">@TADA_Ride_Bot</a></p>
+            <p>ID: 7130496966</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Rats Kingdom</h2>
+            <p>Username: <a href="https://t.me/RatsKingdom_Bot">@RatsKingdom_Bot</a></p>
+            <p>ID: 7320265077</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TON Kombat</h2>
+            <p>Username: <a href="https://t.me/Ton_kombat_bot">@Ton_kombat_bot</a></p>
+            <p>ID: 7019005141</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Frog Farm</h2>
+            <p>Username: <a href="https://t.me/frogfarmbot">@frogfarmbot</a></p>
+            <p>ID: 7483451034</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Chick Coop</h2>
+            <p>Username: <a href="https://t.me/chickcoopofficial_bot">@chickcoopofficial_bot</a></p>
+            <p>ID: 6863059639</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>BIRDS 🐦</h2>
+            <p>Username: <a href="https://t.me/birdx2_bot">@birdx2_bot</a></p>
+            <p>ID: 7477739168</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>WONTON</h2>
+            <p>Username: <a href="https://t.me/WontonOrgBot">@WontonOrgBot</a></p>
+            <p>ID: 7024893036</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>PlayDeck</h2>
+            <p>Username: <a href="https://t.me/playdeckbot">@playdeckbot</a></p>
+            <p>ID: 6167626994</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Hexton - Game And Task</h2>
+            <p>Username: <a href="https://t.me/Hexton_airdrop_bot">@Hexton_airdrop_bot</a></p>
+            <p>ID: 7759206916</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>DUCKS 🦆</h2>
+            <p>Username: <a href="https://t.me/duckscoop_bot">@duckscoop_bot</a></p>
+            <p>ID: 7490818001</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Tearline Bot</h2>
+            <p>Username: <a href="https://t.me/TearlineAI_Bot">@TearlineAI_Bot</a></p>
+            <p>ID: 6479603708</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>BUMP🤑</h2>
+            <p>Username: <a href="https://t.me/MMproBump_bot">@MMproBump_bot</a></p>
+            <p>ID: 7494832475</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>GOATS 🐐</h2>
+            <p>Username: <a href="https://t.me/realgoats_bot">@realgoats_bot</a></p>
+            <p>ID: 7466055776</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Yescoin</h2>
+            <p>Username: <a href="https://t.me/theYescoin_bot">@theYescoin_bot</a></p>
+            <p>ID: 7083067344</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Cherry Bot</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 6868734170</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>SEED</h2>
+            <p>Username: <a href="https://t.me/seed_coin_bot">@seed_coin_bot</a></p>
+            <p>ID: 6508172553</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Etaku</h2>
+            <p>Username: <a href="https://t.me/etakubot">@etakubot</a></p>
+            <p>ID: 7742275545</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Coub</h2>
+            <p>Username: <a href="https://t.me/coub">@coub</a></p>
+            <p>ID: 155217050</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Chess War 💀</h2>
+            <p>Username: <a href="https://t.me/chesswar_bot">@chesswar_bot</a></p>
+            <p>ID: 7118555739</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Lucky Gems</h2>
+            <p>Username: <a href="https://t.me/lucky_gems_official_bot">@lucky_gems_official_bot</a></p>
+            <p>ID: 7022904864</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Bitcoin Farm Mining 🔥</h2>
+            <p>Username: <a href="https://t.me/btc_farm_real_mining_bot">@btc_farm_real_mining_bot</a></p>
+            <p>ID: 7285519079</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Helium Cloud Mining ☁️</h2>
+            <p>Username: <a href="https://t.me/helium_cloud_mining_bot">@helium_cloud_mining_bot</a></p>
+            <p>ID: 5143136468</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Cherry Game</h2>
+            <p>Username: <a href="https://t.me/cherrygame_io_bot">@cherrygame_io_bot</a></p>
+            <p>ID: 7475687427</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Play Corn Battles</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7305741955</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Notcoin</h2>
+            <p>Username: <a href="https://t.me/notcoin_bot">@notcoin_bot</a></p>
+            <p>ID: 6583452530</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>👉 @EzPzFilmBot</h2>
+            <p>Username: <a href="https://t.me/EzPzFileBot">@EzPzFileBot</a></p>
+            <p>ID: 1820278781</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>MA Bot</h2>
+            <p>Username: <a href="https://t.me/MezmurABot">@MezmurABot</a></p>
+            <p>ID: 2057279967</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Jimmy Lesh</h2>
+            <p>Username: <a href="https://t.me/JimmyLesh_bot">@JimmyLesh_bot</a></p>
+            <p>ID: 7309835954</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Tongotchi</h2>
+            <p>Username: <a href="https://t.me/tongotchi_bot">@tongotchi_bot</a></p>
+            <p>ID: 7217117668</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>MONEY DOGS 🐶💰</h2>
+            <p>Username: <a href="https://t.me/money_dogs_bot">@money_dogs_bot</a></p>
+            <p>ID: 7231399674</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Cats 🐈‍⬛</h2>
+            <p>Username: <a href="https://t.me/catsgang_bot">@catsgang_bot</a></p>
+            <p>ID: 7321225531</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>X Empire</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 7063020907</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Blum</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 6865543862</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>NotGames</h2>
+            <p>Username: <a href="https://t.me/notgames_bot">@notgames_bot</a></p>
+            <p>ID: 6363910343</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>MatchQuest</h2>
+            <p>Username: <a href="https://t.me/MatchQuestBot">@MatchQuestBot</a></p>
+            <p>ID: 7176444785</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>TikTok Instagram Downloader</h2>
+            <p>Username: <a href="https://t.me/SaveOFFbot">@SaveOFFbot</a></p>
+            <p>ID: 1825028508</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>VK Music Bot</h2>
+            <p>Username: <a href="https://t.me/vkmusic_bot">@vkmusic_bot</a></p>
+            <p>ID: 119606003</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Rocky Rabbit</h2>
+            <p>Username: <a href="https://t.me/rocky_rabbit_bot">@rocky_rabbit_bot</a></p>
+            <p>ID: 7247328251</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Dogs 🦴</h2>
+            <p>Username: <a href="https://t.me/dogshouse_bot">@dogshouse_bot</a></p>
+            <p>ID: 7352918101</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Torrent Downloader ☁️ [Seedr.cc]</h2>
+            <p>Username: <a href="https://t.me/TorrentSeedrBot">@TorrentSeedrBot</a></p>
+            <p>ID: 1810644401</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Free TonCoin Bot</h2>
+            <p>Username: <a href="https://t.me/Freequickton_bot">@Freequickton_bot</a></p>
+            <p>ID: 7143910251</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Channel Help</h2>
+            <p>Username: <a href="https://t.me/None">@None</a></p>
+            <p>ID: 260566685</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Pink Music G.</h2>
+            <p>Username: <a href="https://t.me/GlomaticoAppleMusicBot">@GlomaticoAppleMusicBot</a></p>
+            <p>ID: 5744865072</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Video Search for YouTube</h2>
+            <p>Username: <a href="https://t.me/vid">@vid</a></p>
+            <p>ID: 90832338</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>File</h2>
+            <p>Username: <a href="https://t.me/filebot">@filebot</a></p>
+            <p>ID: 5002221452</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>File Serving Bot</h2>
+            <p>Username: <a href="https://t.me/FileServingbot">@FileServingbot</a></p>
+            <p>ID: 5044937119</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>ForwardsCoverBot</h2>
+            <p>Username: <a href="https://t.me/ForwardsCoverBot">@ForwardsCoverBot</a></p>
+            <p>ID: 432668551</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>GatMedia > SaveMediaBot</h2>
+            <p>Username: <a href="https://t.me/getmediabot">@getmediabot</a></p>
+            <p>ID: 144862938</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Music Hunters</h2>
+            <p>Username: <a href="https://t.me/MusicHuntersBot">@MusicHuntersBot</a></p>
+            <p>ID: 419449002</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Hamster Kombat</h2>
+            <p>Username: <a href="https://t.me/hamster_kombat_bot">@hamster_kombat_bot</a></p>
+            <p>ID: 7018368922</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Community</h2>
+            <p>Username: <a href="https://t.me/community_bot">@community_bot</a></p>
+            <p>ID: 6101007413</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Libelax</h2>
+            <p>Username: <a href="https://t.me/Libelax_bot">@Libelax_bot</a></p>
+            <p>ID: 6231423607</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>🇺🇦 LyBot – YouTube Music</h2>
+            <p>Username: <a href="https://t.me/LyBot">@LyBot</a></p>
+            <p>ID: 473587803</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>𝗠𝘂𝘀𝗶𝗰 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱𝗲𝗿 / Спотифай музыка скачать / Спотіфай пісні</h2>
+            <p>Username: <a href="https://t.me/spotifysavesbot">@spotifysavesbot</a></p>
+            <p>ID: 5371686493</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>SZ - Безопасные покупки GooglePlay|AppStore</h2>
+            <p>Username: <a href="https://t.me/safezone_bot">@safezone_bot</a></p>
+            <p>ID: 5524325828</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Joey Music Bot</h2>
+            <p>Username: <a href="https://t.me/joeymusicbot">@joeymusicbot</a></p>
+            <p>ID: 1173618573</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Eve</h2>
+            <p>Username: <a href="https://t.me/AiEveBot">@AiEveBot</a></p>
+            <p>ID: 6044588815</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>File Converter</h2>
+            <p>Username: <a href="https://t.me/newfileconverterbot">@newfileconverterbot</a></p>
+            <p>ID: 532566563</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Google Web Search</h2>
+            <p>Username: <a href="https://t.me/Gwebbot">@Gwebbot</a></p>
+            <p>ID: 1224744675</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>GoogleBot</h2>
+            <p>Username: <a href="https://t.me/GoogleDEBot">@GoogleDEBot</a></p>
+            <p>ID: 221613869</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Howdy Authenticator</h2>
+            <p>Username: <a href="https://t.me/HowdyAuthenticatorBot">@HowdyAuthenticatorBot</a></p>
+            <p>ID: 1770426129</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>RSS</h2>
+            <p>Username: <a href="https://t.me/rss2tg_bot">@rss2tg_bot</a></p>
+            <p>ID: 284403259</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Check OTT</h2>
+            <p>Username: <a href="https://t.me/CheckOTTbot">@CheckOTTbot</a></p>
+            <p>ID: 5055433154</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Smartphone Database</h2>
+            <p>Username: <a href="https://t.me/SmartphoneDBot">@SmartphoneDBot</a></p>
+            <p>ID: 707259430</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Freelance Ethiopia Bot</h2>
+            <p>Username: <a href="https://t.me/freelanceethiobot">@freelanceethiobot</a></p>
+            <p>ID: 825369992</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>ReadMe</h2>
+            <p>Username: <a href="https://t.me/ReadmeBot">@ReadmeBot</a></p>
+            <p>ID: 115674541</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>Friday</h2>
+            <p>Username: <a href="https://t.me/i_am_friday_bot">@i_am_friday_bot</a></p>
+            <p>ID: 268400752</p>
+        </div>
+        
+        <div class="bot-card">
+            <h2>QRcoder</h2>
+            <p>Username: <a href="https://t.me/QRcodegen_bot">@QRcodegen_bot</a></p>
+            <p>ID: 230309446</p>
+        </div>
+        
+        </div>
+    </body>
+    </html>
+    
